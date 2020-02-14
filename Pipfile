@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 slackclient = "*"
 slackeventsapi = "*"
+python-decouple = "*"
 python-dotenv = "*"
 
 [requires]

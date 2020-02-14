@@ -1,10 +1,6 @@
-import os
-from dotenv import load_dotenv
+from decouple import config
 
 
-load_dotenv()
-
-
-PORT = os.getenv("PORT")
-SLACK_BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
-SLACK_SIGNING_SECRET = os.getenv("SLACK_SIGNING_SECRET")
+PORT = config("PORT", cast=int)
+SLACK_BOT_TOKEN = config("SLACK_BOT_TOKEN")
+SLACK_SIGNING_SECRET = config("SLACK_SIGNING_SECRET")
